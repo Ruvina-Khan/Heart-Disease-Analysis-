@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="prediction__system.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script type="text/javascript">
+    function alertme() {
+        var msg = "YOUR HAVE SUCCESSFULLY CREATED YOUR ACCOUNT..!! PLEASE SIGNIN"
+        alert(msg);
+    }
+</script>
+k rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body {
+  background-image: url('images/heart17.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+       
+        
+        
+
+</style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx"><i class="fa fa-home fa-3x" aria-hidden="true"></i></asp:HyperLink><!-- <nav class="container, text-left" style="font-size:30px; background-color:aqua;border-radius: 10px;">--><asp:Label ID="Label2" runat="server" Text="--Consult These Doctors--" style="margin-left: 50px;color:white;font-size:20px;"  ></asp:Label>
+        <nav class="container, text-left" style="font-size:30px; background-color:darkred; color: white; border-radius: 10px; width: 1350px; ">
+          <asp:Label ID="Label1" runat="server" Text="HEART PREDICTION SYSTEM" BorderColor="Black" style="margin-left: 10px;" ></asp:Label> 
+          </nav>
+        <br />
+            <div>
+                <table style="font-size:20px;font:200;">
+                    <tr>
+                        <th><img src="images/heart16.jpg" max-width: 100%; height: 10%; width: 20%; position: absolute; top: 100px; alt="xyz" width="600px" height="250px">
+                        </th>
+                        <th style="color:white;">Add your dataset for better analysis and experience of the user.You can check the record of visited Patient. Check the Trained Data.</th>
+                    </tr>
+                </table>
+            </div>
+        <div>
+                <asp:Button ID="Button3" runat="server" Text="View Trained Data" class="btn btn" Style="margin-top: 1px; margin-left: 5px; width:200px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button3_Click"/>
+            <asp:Button ID="Button1" runat="server" Text="Add Training Data" class="btn btn" Style="margin-top: 1px; margin-left: 40px; width:190px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button1_Click"/>
+            <asp:Button ID="Button2" runat="server" Text="View User" class="btn btn" Style="margin-left: 40px; width:150px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button2_Click"/>
+            <asp:Button ID="Button4" runat="server" Text="Add Doctor" class="btn btn" Style="margin-top: 1px; margin-left: 40px; width:130px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button4_Click1"/>
+            <asp:Button ID="Button7" runat="server" Text="View Doctor" class="btn btn" Style="margin-top: 1px; margin-left: 40px; width:130px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button7_Click" />
+            <asp:Button ID="Button5" runat="server" Text="View Feedback" class="btn btn" Style="margin-top: 1px; margin-left: 40px; width:150px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button5_Click"/>
+            <asp:Button ID="Button6" runat="server" Text="Logout" class="btn btn" Style="margin-top: 1px; margin-left: 40px; width:90px; height: 27px; color: white; background-color: transparent; font-size:20px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);padding: 1px 1px;" OnClick="Button6_Click"/>
+         
+        </div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>
